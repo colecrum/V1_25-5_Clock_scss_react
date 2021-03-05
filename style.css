@@ -1,8 +1,14 @@
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background: url("https://static.vecteezy.com/system/resources/previews/000/092/412/original/study-vector-icons.jpg") no-repeat fixed center;
   text-align: center;
+  position: relative;
 }
 
+/* MAIN --------------------------------------------- */
 div {
   box-sizing: border-box;
 }
@@ -28,6 +34,17 @@ div {
   border: 3px solid blue;
 }
 
+@media screen and (max-width: 600px) {
+  #container {
+    height: auto;
+  }
+
+  .overlay {
+    width: 90%;
+    height: auto;
+    display: block;
+  }
+}
 .main {
   display: flex;
   flex-direction: row;
@@ -52,6 +69,17 @@ div {
   height: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  .left {
+    width: 100%;
+    height: auto;
+  }
+
+  .right {
+    width: 100%;
+    height: auto;
+  }
+}
 .session-header {
   font-size: 40px;
 }
@@ -112,6 +140,11 @@ hr {
   padding: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  .row {
+    margin: auto;
+  }
+}
 .timer-header {
   font-size: 40px;
 }
@@ -141,12 +174,15 @@ hr {
     -o-transform: scale(0.8);
   }
 }
+/* SIGN-OFF --------------------------------------------*/
+/*designed by & contact*/
 #footer {
   background-color: black;
 }
 
 #contact-section {
   color: black;
+  background-color: white;
   text-align: center;
 }
 
@@ -164,4 +200,10 @@ hr {
 #git-logo {
   height: 50px;
   width: 75px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-links {
+    width: 100%;
+  }
 }
